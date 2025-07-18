@@ -827,6 +827,34 @@
           card.style.opacity = '1';
         }, 200 * index);
       });
+
+      // Animate feature cards on the 'Dashboard Development' slide
+      if (event.currentSlide.querySelector('h2')?.textContent === 'Dashboard Development') {
+        const featureCards = event.currentSlide.querySelectorAll('.feature-card');
+        featureCards.forEach((card, index) => {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 200 * index);
+        });
+      }
+
+      // Animate list items on the 'Future Enhancements' slide
+      if (event.currentSlide.querySelector('h2')?.textContent === 'Future Enhancements') {
+        const listItems = event.currentSlide.querySelectorAll('.benefit-list li');
+        listItems.forEach((item, index) => {
+          item.style.opacity = '0';
+          item.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+          }, 200 * index);
+        });
+      }
     });
 
     // Add hover effects for architecture components
