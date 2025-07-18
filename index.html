@@ -441,6 +441,40 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* Additional styles for enhanced slides */
+    .highlight-box {
+      background: var(--azure-blue);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .highlight-box.orange {
+      background: var(--orange);
+    }
+
+    .highlight-box.green {
+      background: var(--green);
+      color: white;
+    }
+
+    .highlight-box.amber {
+      background: var(--amber);
+      color: black;
+    }
+
+    .highlight-box.deep-blue {
+      background: var(--deep-blue);
+    }
+
+    .team-member p {
+      font-size: 0.9em;
+      color: var(--gray);
+      margin-top: 5px;
+    }
   </style>
 </head>
 
@@ -468,7 +502,7 @@
 
       <!-- Slide 2: Meet the Team -->
       <section>
-        <h2>Meet the team!</h2>
+        <h2>Meet the Team!</h2>
         <div class="team-grid">
           <div class="team-member">
             <img src="team/Alexis Petignat.png" alt="Alexis Petignat">
@@ -504,6 +538,9 @@
           <h3 style="font-size: 2.5em; color: var(--deep-blue); margin-bottom: 40px;">
             How to choose the breed of cat that best suits our tastes?
           </h3>
+          <div class="highlight-box" style="background: var(--azure-blue); color: white; padding: 20px; border-radius: 10px;">
+            <p>With over 70 recognized cat breeds, finding the perfect match can be overwhelming. Our solution simplifies this process using AI.</p>
+          </div>
         </div>
       </section>
 
@@ -549,7 +586,7 @@
         <h2>Dataset 1: Azure Computer Vision for Image Classification</h2>
         <div style="text-align: center; margin-top: 60px;">
           <h3>Dataset Information</h3>
-          <div style="max-width: 800px; margin: 0 auto;">
+          <div class="highlight-box" style="background: var(--orange); color: white; padding: 20px; border-radius: 10px;">
             <ul class="benefit-list">
               <li>This dataset consists of 6 types of cat breed:</li>
               <ul>
@@ -572,7 +609,7 @@
         <h2>Dataset 1: Azure Computer Vision for Image Classification</h2>
         <div style="text-align: center; margin-top: 60px;">
           <h3>Data Source</h3>
-          <div style="max-width: 800px; margin: 0 auto;">
+          <div class="highlight-box" style="background: var(--green); color: white; padding: 20px; border-radius: 10px;">
             <ul class="benefit-list">
               <li>The data gathered from Google Images, Shutterstock, and another image provider website with Google Chrome plug-in</li>
             </ul>
@@ -598,7 +635,7 @@
         <h2>Dataset 2: Azure ML for Tabular Data Classification</h2>
         <div style="text-align: center; margin-top: 60px;">
           <h3>Dataset Information</h3>
-          <div style="max-width: 800px; margin: 0 auto;">
+          <div class="highlight-box" style="background: var(--amber); color: black; padding: 20px; border-radius: 10px;">
             <ul class="benefit-list">
               <li>This dataset contains ~1000 items with data on 3 different cat breeds:</li>
               <ul>
@@ -616,7 +653,7 @@
         <h2>Dataset 2: Azure ML for Tabular Data Classification</h2>
         <div style="text-align: center; margin-top: 60px;">
           <h3>Additional Information</h3>
-          <div style="max-width: 800px; margin: 0 auto;">
+          <div class="highlight-box" style="background: var(--deep-blue); color: white; padding: 20px; border-radius: 10px;">
             <ul class="benefit-list">
               <li>It includes information about animal's breed, age, gender, body length, weight, fur colour and pattern, eye colour, sleeping and playing time, country (including latitude and longitude), etc.</li>
             </ul>
@@ -670,7 +707,6 @@
           <h3>Why Choose Our AI Solution?</h3>
           <p>Complete solution with dashboard, APIs, and Azure infrastructure. Start identifying cat breeds instantly!</p>
           <p>Contact the EPITA Team to implement this AI-powered solution and revolutionize your cat breed identification process.</p>
-          <p><a href="https://azure-interface-epita.vercel.app/" target="_blank" style="color: var(--azure-blue); text-decoration: underline;">Visit our Dashboard</a></p>
         </div>
       </section>
     </div>
