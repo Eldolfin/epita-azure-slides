@@ -393,12 +393,7 @@
     }
 
     .benefit-list li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: var(--green);
-      font-weight: bold;
-      font-size: 1.2em;
+      content: ''; /* Removed the checkmark */
     }
 
     .team-grid {
@@ -457,8 +452,8 @@
         <h1>AI-Powered Cat Breed Identification System</h1>
         <h3>Dual-Model Solution on Microsoft Azure</h3>
         <p style="margin-top: 50px; font-size: 1.5em; color: var(--gray);">
-          <strong>Delivered by:</strong> EPITA Team<br>
-          <strong>Client:</strong> Professional Services<br>
+          <strong>Delivered by:</strong> Whiskers Team<br>
+          <strong>Client:</strong> Pierre-Olivier PATIN<br>
           <strong>Date:</strong> July 2025
         </p>
         <div class="logo-container">
@@ -471,7 +466,7 @@
         </div>
       </section>
 
-      <!-- Slide 2: The Team -->
+      <!-- Slide 2: Meet the Team -->
       <section>
         <h2>Meet the team!</h2>
         <div class="team-grid">
@@ -502,415 +497,180 @@
         </div>
       </section>
 
-      <!-- Slide 3: Problem Statement -->
+      <!-- Slide 3: The Problematic -->
       <section>
-        <h2>The Challenge: Accurate Cat Breed Identification</h2>
-        <div class="two-column">
-          <div style="text-align: center;">
-            <div class="problem-icon">🐱</div>
-            <h3>Current Pain Points</h3>
-            <ul style="text-align: left; font-size: 1.2em;">
-              <li>Manual expert assessment required</li>
-              <li>Inconsistent accuracy (70-80%)</li>
-              <li>Time-intensive process</li>
-              <li>Limited scalability</li>
-              <li>High operational costs</li>
-            </ul>
-          </div>
-          <div class="stats-grid">
-            <div class="stat-card">
-              <div class="stat-number">$2.3B</div>
-              <div class="stat-label">Pet Industry Growth</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">45%</div>
-              <div class="stat-label">Manual Error Rate</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">3x</div>
-              <div class="stat-label">Cost Reduction Potential</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 3: Solution Overview -->
-      <section>
-        <h2>Our Approach: Dual-Model AI Architecture</h2>
-        <div class="feature-grid">
-          <div class="feature-card fragment">
-            <div class="feature-icon">📷</div>
-            <h3>Computer Vision Model</h3>
-            <p>Azure Computer Vision trained on Kaggle dataset for image-based breed identification</p>
-          </div>
-          <div class="feature-card fragment">
-            <div class="feature-icon">📊</div>
-            <h3>Tabular ML Model</h3>
-            <p>Azure ML processing 17 data points for characteristic-based classification</p>
-          </div>
-          <div class="feature-card fragment">
-            <div class="feature-icon">🔗</div>
-            <h3>Unified API Gateway</h3>
-            <p>Single integration point providing seamless access to both models</p>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Slide 5: Computer Vision Model -->
-      <section>
-        <h2>Model 1: Azure Computer Vision for Image Classification</h2>
-        <div class="two-column">
-          <div>
-            <h3>Dataset & Training</h3>
-            <ul class="benefit-list">
-              <li>Kaggle Cats Dataset</li>
-              <li>10,000+ cat images</li>
-              <li>42 different breeds</li>
-              <li>Azure Computer Vision Service</li>
-              <li>Transfer learning approach</li>
-            </ul>
-
-            <h3>Performance Metrics</h3>
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 85%">
-                <div class="progress-text">85% Accuracy</div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 92%">
-                <div class="progress-text">92% Top-3 Accuracy</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3>API Response Example (Vision)</h3>
-            <div class="api-demo">
-              <pre>{
-                <span class="json-key">"predictions"</span>: [
-                {
-                <span class="json-key">"tagName"</span>: <span class="json-string">"bengal"</span>,
-                <span class="json-key">"probability"</span>: <span class="json-number">0.00008971</span>
-                },
-                {
-                <span class="json-key">"tagName"</span>: <span class="json-string">"Sleep Paralysis demon"</span>,
-                <span class="json-key">"probability"</span>: <span class="json-number">0.99985039</span>
-                },
-                ...
-                ]
-                }
-              </pre>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 6: Machine Learning Model -->
-      <section>
-        <h2>Model 2: Azure ML for Tabular Data Classification</h2>
-        <div class="two-column">
-          <div>
-            <h3>17 Data Points Analyzed</h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9em;">
-              <div>• Gender</div>
-              <div>• Age</div>
-              <div>• Weight</div>
-              <div>• Height</div>
-              <div>• Body Length</div>
-              <div>• Tail Length</div>
-              <div>• Coat Color</div>
-              <div>• Coat Pattern</div>
-              <div>• Coat Length</div>
-              <div>• Eye Color</div>
-              <div>• Ear Shape</div>
-              <div>• Face Shape</div>
-              <div>• Temperament</div>
-              <div>• Activity Level</div>
-              <div>• Vocal Level</div>
-              <div>• Grooming Needs</div>
-              <div>• Health Score</div>
-            </div>
-          </div>
-
-          <div>
-            <h3>Model Performance</h3>
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 88%">
-                <div class="progress-text">88% Accuracy</div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 0.95 * 100%">
-                <div class="progress-text">95% Precision</div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 0.91 * 100%">
-                <div class="progress-text">91% Recall</div>
-              </div>
-            </div>
-
-            <h3>Use Cases</h3>
-            <ul class="benefit-list">
-              <li>Veterinary assessments</li>
-              <li>Breeding programs</li>
-              <li>Insurance applications</li>
-              <li>Photo verification</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 7: API Gateway Integration -->
-      <section>
-        <h2>Unified Access Through API Gateway</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">🔐</div>
-            <h3>Security & Authentication</h3>
-            <p>Leverages Azure Key Vault for secret management and Azure AD for authentication. All endpoints are
-              protected with OAuth 2.0 and API key validation. Implements rate limiting to prevent abuse and ensures
-              robust request validation against defined schemas.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Performance & Scalability</h3>
-            <p>Built on Azure App Service, the solution automatically scales based on demand. Azure Traffic Manager
-              provides global load balancing, and Azure CDN is used for caching static assets, ensuring low latency and
-              high availability worldwide.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">📋</div>
-            <h3>Monitoring & Analytics</h3>
-            <p>Integrated with Azure Monitor and Application Insights for real-time performance metrics, request
-              logging, and error tracking. Provides detailed dashboards for usage analytics and operational health,
-              enabling proactive maintenance and optimization.</p>
-          </div>
-        </div>
-
-        <div class="api-demo">
-          <pre><span class="json-key"># Tabular API Example</span>
-            $ curl https://.../tabular/invocations -H '''Content-Type: application/json''' -d '{
-            "dataframe_split": {
-            "columns": ["Age_in_years", "Weight", ...],
-            "data": [[0.42, 3.3, ...]]
-            }
-            }'
-            <span class="json-key"># Response:</span> { "predictions": ["Maine coon"] }
-
-            <span class="json-key"># Vision API Example</span>
-            $ curl https://.../vision/image -F imageData=@ugly.png
-            <span class="json-key"># Response:</span>
-            {
-            "predictions": [
-            { "tagName": "Sleep Paralysis demon", "probability": 0.999 },
-            { "tagName": "bengal", "probability": 0.00008 },
-            ...
-            ]
-            }
-          </pre>
-        </div>
-      </section>
-
-      <!-- Slide 8: User Interface Demo -->
-      <section>
-        <h2>Proof of Concept Dashboard</h2>
-        <div class="dashboard-mockup">
-          <div class="mockup-header">
-            Cat Breed Identification System
-          </div>
-          <div class="mockup-content">
-            <div>
-              <h3>Upload Image</h3>
-              <div class="upload-area">
-                <div style="font-size: 3em;">📷</div>
-                <p>Drag & drop your cat image here<br>or click to browse</p>
-                <button
-                  style="background: var(--azure-blue); color: white; border: none; padding: 10px 20px; border-radius: 5px; margin-top: 10px;">Choose
-                  File</button>
-              </div>
-
-              <h3 style="margin-top: 30px;">Or Enter Cat Data</h3>
-              <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #ddd;">
-                <input type="text" placeholder="Age"
-                  style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ddd; border-radius: 4px;">
-                <input type="text" placeholder="Weight"
-                  style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ddd; border-radius: 4px;">
-                <select style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ddd; border-radius: 4px;">
-                  <option>Select Coat Color</option>
-                  <option>Orange</option>
-                  <option>Black</option>
-                  <option>White</option>
-                </select>
-                <button
-                  style="background: var(--green); color: white; border: none; padding: 10px 20px; border-radius: 5px; width: 100%; margin-top: 10px;">Analyze</button>
-              </div>
-            </div>
-
-            <div class="result-area">
-              <h3>Results</h3>
-              <div style="border-left: 4px solid var(--azure-blue); padding-left: 15px; margin: 20px 0;">
-                <h4>Most Likely Breed: Persian</h4>
-                <div class="progress-bar" style="height: 20px;">
-                  <div class="progress-fill" style="width: 87%; height: 100%;">
-                    <div class="progress-text" style="font-size: 0.9em;">87%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div style="border-left: 4px solid var(--orange); padding-left: 15px; margin: 20px 0;">
-                <h4>Alternative: Maine Coon</h4>
-                <div class="progress-bar" style="height: 20px;">
-                  <div class="progress-fill" style="width: 9%; height: 100%;">
-                    <div class="progress-text" style="font-size: 0.9em;">9%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
-                <strong>Processing Time:</strong> 0.3 seconds<br>
-                <strong>Model Used:</strong> Computer Vision<br>
-                <strong>Confidence Score:</strong> High
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 9: Performance & Accuracy -->
-      <section>
-        <h2>Delivering Results: Model Performance</h2>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">85%</div>
-            <div class="stat-label">Computer Vision Accuracy</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">88%</div>
-            <div class="stat-label">Tabular ML Accuracy</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">0.3s</div>
-            <div class="stat-label">Average Response Time</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">99.9%</div>
-            <div class="stat-label">System Uptime</div>
-          </div>
-        </div>
-
-        <div class="two-column">
-          <div>
-            <h3>Model Comparison</h3>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-              <tr style="background: var(--azure-blue); color: white;">
-                <th style="padding: 15px; text-align: left;">Metric</th>
-                <th style="padding: 15px; text-align: center;">CV Model</th>
-                <th style="padding: 15px; text-align: center;">ML Model</th>
-              </tr>
-              <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 12px;">Accuracy</td>
-                <td style="padding: 12px; text-align: center;">85%</td>
-                <td style="padding: 12px; text-align: center;">88%</td>
-              </tr>
-              <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 12px;">Precision</td>
-                <td style="padding: 12px; text-align: center;">83%</td>
-                <td style="padding: 12px; text-align: center;">95%</td>
-              </tr>
-              <tr>
-                <td style="padding: 12px;">Processing Time</td>
-                <td style="padding: 12px; text-align: center;">0.3s</td>
-                <td style="padding: 12px; text-align: center;">0.1s</td>
-              </tr>
-            </table>
-          </div>
-
-          <div>
-            <h3>Reliability Metrics</h3>
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 92%;">
-                <div class="progress-text">92% Top-3 Accuracy</div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 98%;">
-                <div class="progress-text">98% Data Quality Score</div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 95%;">
-                <div class="progress-text">95% User Satisfaction</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-      <!-- Slide 11: Technical Implementation Details -->
-      <section>
-        <h2>Technical Implementation Highlights</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">☁️</div>
-            <h3>Cloud-Native Architecture</h3>
-            <p>Built entirely on Azure with auto-scaling, high availability, and disaster recovery</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Enterprise Security</h3>
-            <p>End-to-end encryption, compliance with data protection regulations</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">📈</div>
-            <h3>Performance Optimization</h3>
-            <p>Optimized for speed and accuracy with continuous model improvement</p>
-          </div>
-        </div>
-
-        <div class="api-demo">
-          <pre><span class="json-key">Architecture Benefits:</span>
-            • <span class="json-string">Serverless computing</span> - Pay only for what you use
-            • <span class="json-string">Auto-scaling</span> - Handle traffic spikes automatically
-            • <span class="json-string">Global distribution</span> - Deploy worldwide with Azure CDN
-            • <span class="json-string">Monitoring & logging</span> - Full observability with Azure Monitor
-            • <span class="json-string">CI/CD pipeline</span> - Automated testing and deployment</pre>
-        </div>
-      </section>
-
-      <!-- Slide 12: Questions & Discussion -->
-      <section>
-        <h2>Questions & Discussion</h2>
+        <h2>The Problematic</h2>
         <div style="text-align: center; margin-top: 100px;">
-          <div class="solution-icon">💬</div>
-          <h3>Ready to Deploy Your AI Solution?</h3>
-          <p style="font-size: 1.3em; margin: 40px 0;">
-            Let's discuss implementation timeline,<br>
-            technical requirements, and next steps.
-          </p>
+          <h3 style="font-size: 2.5em; color: var(--deep-blue); margin-bottom: 40px;">
+            How to choose the breed of cat that best suits our tastes?
+          </h3>
+        </div>
+      </section>
 
-          <div class="stats-grid" style="margin-top: 50px;">
-            <div class="stat-card">
-              <div class="stat-number">15</div>
-              <div class="stat-label">Minutes to Deploy</div>
+      <!-- Slide 4: The Solution -->
+      <section>
+        <h2>Our Solution: AI-Powered Cat Breed Identification System</h2>
+        <div class="architecture-diagram">
+          <h3>Dual-Model Architecture</h3>
+          <div class="arch-row">
+            <div class="arch-component dataset">
+              Cat Images<br>(Kaggle Dataset)
             </div>
-            <div class="stat-card">
-              <div class="stat-number">24/7</div>
-              <div class="stat-label">Support Available</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Client Satisfaction</div>
+            <div class="arrow">↓</div>
+            <div class="arch-component dataset">
+              Cat Characteristics<br>(17 Data Points)
             </div>
           </div>
+          <div class="arch-row">
+            <div class="arch-component model">
+              Azure Computer Vision<br>Image Classification
+            </div>
+            <div class="arch-component model">
+              Azure ML<br>Tabular Classification
+            </div>
+          </div>
+          <div class="arch-row">
+            <div class="arrow">↓</div>
+            <div class="arch-component api">
+              Unified API Gateway
+            </div>
+            <div class="arrow">↓</div>
+          </div>
+          <div class="arch-row">
+            <div class="arch-component user">
+              User Interface<br>(Dashboard)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5: Dataset 1 - Part 1 -->
+      <section>
+        <h2>Dataset 1: Azure Computer Vision for Image Classification</h2>
+        <div style="text-align: center; margin-top: 60px;">
+          <h3>Dataset Information</h3>
+          <div style="max-width: 800px; margin: 0 auto;">
+            <ul class="benefit-list">
+              <li>This dataset consists of 6 types of cat breed:</li>
+              <ul>
+                <li>American Shorthair</li>
+                <li>Bengal</li>
+                <li>Maine Soon</li>
+                <li>Ragdoll</li>
+                <li>Scottish Fold</li>
+                <li>Sphinx</li>
+              </ul>
+              <li>Train data have 200 images for each class</li>
+              <li>Test data have 50 images for each class</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5: Dataset 1 - Part 2 -->
+      <section>
+        <h2>Dataset 1: Azure Computer Vision for Image Classification</h2>
+        <div style="text-align: center; margin-top: 60px;">
+          <h3>Data Source</h3>
+          <div style="max-width: 800px; margin: 0 auto;">
+            <ul class="benefit-list">
+              <li>The data gathered from Google Images, Shutterstock, and another image provider website with Google Chrome plug-in</li>
+            </ul>
+          </div>
+
+          <h3>API Response Example</h3>
+          <div class="api-demo" style="max-width: 800px; margin: 0 auto;">
+            <pre>{
+  "predictions": [
+    {"tagName": "persian", "probability": 0.8547},
+    {"tagName": "maine_coon", "probability": 0.0892},
+    {"tagName": "ragdoll", "probability": 0.0341}
+  ],
+  "processing_time": 0.3,
+  "model_version": "v2.1"
+}</pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: Dataset 2 - Part 1 -->
+      <section>
+        <h2>Dataset 2: Azure ML for Tabular Data Classification</h2>
+        <div style="text-align: center; margin-top: 60px;">
+          <h3>Dataset Information</h3>
+          <div style="max-width: 800px; margin: 0 auto;">
+            <ul class="benefit-list">
+              <li>This dataset contains ~1000 items with data on 3 different cat breeds:</li>
+              <ul>
+                <li>Maine Coon</li>
+                <li>Ragdoll</li>
+                <li>Angora</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: Dataset 2 - Part 2 -->
+      <section>
+        <h2>Dataset 2: Azure ML for Tabular Data Classification</h2>
+        <div style="text-align: center; margin-top: 60px;">
+          <h3>Additional Information</h3>
+          <div style="max-width: 800px; margin: 0 auto;">
+            <ul class="benefit-list">
+              <li>It includes information about animal's breed, age, gender, body length, weight, fur colour and pattern, eye colour, sleeping and playing time, country (including latitude and longitude), etc.</li>
+            </ul>
+          </div>
+
+          <h3>API Response Example</h3>
+          <div class="api-demo" style="max-width: 800px; margin: 0 auto;">
+            <pre>{
+  "dataframe_split": {
+    "columns": ["Age_in_years", "Weight", ...],
+    "data": [[0.42, 3.3, ...]]
+  },
+  "predictions": ["Maine Coon"],
+  "confidence": 0.88,
+  "processing_time": 0.1
+}</pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: Dashboard Development -->
+      <section>
+        <h2>Dashboard Development</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Frontend</h3>
+            <p>Next.js 14 + React + TypeScript</p>
+          </div>
+          <div class="feature-card">
+            <h3>UI Components</h3>
+            <p>Tailwind CSS + Shadcn/ui + Lucide icons</p>
+          </div>
+          <div class="feature-card">
+            <h3>Backend</h3>
+            <p>Azure ML endpoints</p>
+          </div>
+          <div class="feature-card">
+            <h3>Deployment</h3>
+            <p>Vercel</p>
+          </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">
+          <a href="https://azure-interface-epita.vercel.app/" target="_blank" style="color: var(--azure-blue); text-decoration: underline;">Visit our Dashboard</a>
+        </p>
+      </section>
+
+      <!-- Slide 9: Conclusion -->
+      <section>
+        <h2>Transform Your Cat Breed Identification Today</h2>
+        <div style="text-align: center;">
+          <h3>Why Choose Our AI Solution?</h3>
+          <p>Complete solution with dashboard, APIs, and Azure infrastructure. Start identifying cat breeds instantly!</p>
+          <p>Contact the EPITA Team to implement this AI-powered solution and revolutionize your cat breed identification process.</p>
+          <p><a href="https://azure-interface-epita.vercel.app/" target="_blank" style="color: var(--azure-blue); text-decoration: underline;">Visit our Dashboard</a></p>
         </div>
       </section>
     </div>
@@ -944,7 +704,7 @@
       hideInactiveCursor: true,
       hideCursorTime: 5000,
       previewLinks: false,
-      width: 1200,
+      width: 1600, // Increased width to make slides wider
       height: 800,
       margin: 0.02,
       minScale: 0.2,
